@@ -1,0 +1,218 @@
+/* Start Global Rules */
+:root{
+    --main-color: hsl(179, 62%, 43%);
+    --secondary-color: hsl(71, 73%, 54%);
+    --background: hsl(204, 43%, 93%);
+    --background-text: hsl(218, 22%, 67%);
+}
+
+html{
+    background-color: var(--background);
+    background-attachment: fixed;
+    font-family: 'Karla';
+}
+
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+main .container .content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "heading heading heading heading heading heading" "price price price features features features";
+    width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.100);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+main .container .content .block1{
+    grid-area: heading;
+    background-color: white;
+    padding: 20px;
+    padding-left: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main .container .content .block2{
+    grid-area: price;
+    background-color: var(--main-color);
+    padding: 20px;
+    padding-left: 40px;
+    border-bottom-left-radius: 10px;
+}
+
+main .container .content .block3{
+    grid-area: features;
+    background-color: hsla(179, 62%, 43%, 0.742);
+    padding: 20px;
+    padding-left: 30px;
+    border-bottom-right-radius: 10px;
+}
+
+main .container .content .block1 h1{
+    font-size: 25px;
+    color: var(--main-color);
+
+}
+
+main .container .content .block1 h2{
+    font-size: 17px;
+    color: var(--secondary-color);
+}
+
+main .container .content .block1 p{
+    color: var(--background-text);
+}
+
+main .container .content .block1 .first{
+    margin-bottom: 0;
+}
+
+main .container .content .block1 .second{
+    margin-top: 10px;
+}
+
+main .container .content .block2 .title{
+    font-size: 20px;
+    color: white;
+}
+
+
+main .container .content .block2 .price{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+    color: white;
+}
+
+main .container .content .block2 span{
+    color: white;
+    font-size: 30px;
+}
+
+main .container .content .block2 .month{
+    opacity: 50%;
+    font-size: 16px;
+}
+
+main .container .content .block2 p{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    font-size: 16px;
+}
+
+main .container .content .block2 button{
+    width: 99%;
+    height: 45px;
+    border: none;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.150); 
+    font-family: 'Karla';
+    font-weight: 400;
+}
+
+main .container .content .block2 button:hover{
+    cursor: pointer;
+    background-color: hsl(71, 86%, 60%);
+}
+
+main .container .content .block3 h3{
+    color: white;
+}
+
+main .container .content .block3 p{
+    color: white;
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 65%;
+}
+
+@media (max-width:768px){
+    main .container{
+        padding: 50px 20px;
+    }
+    main .container .content{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "info" "price" "features";
+    }
+
+    main .container .content .block1{
+        grid-area: info;
+
+    }
+
+
+    main .container .content .block1 h1{
+        margin-bottom: 20px;
+    }
+
+    main .container .content .block2{
+        grid-area: price;
+        border-bottom-left-radius: 0;
+        padding-left: 20px;
+    
+    }
+
+    main .container .content .block1 h2{
+        margin-bottom: 20px;
+    }
+
+    main .container .content .block3{
+        grid-area: features;
+        border-bottom-left-radius: 10px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:350px) {
+    main .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    main .container .content .block1 h1{
+        font-size: 20px;
+    }
+
+    main .container .content .block1 h2{
+        font-size: 15px;
+    }
+
+    main .container .content .block1 .first{
+        font-size: 12px;
+    }
+
+    main .container .content .block1 .second{
+        font-size: 12px;
+    }
+
+    main .container .content .block2 p {
+        font-size: 14px;
+    }
+
+    main .container .content .block2 .title{
+        font-size: 19px;
+    }
+
+    main .container .content .block2 span{
+        font-size: 27px;
+    }
+}
+/* End Global Rules */
