@@ -15,8 +15,8 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live Site]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-price-section-with-html-and-css-MvxsFPaoFu)
+- Live Site URL: [Live Site](https://ahmed-elgammal-900.github.io/Price-Section/)
 
 
 ## Author
